@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Exercices_de_revision_WCS_2.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+         <style>
+        body{
+            padding:0;
+            margin:0;
+        }
+        header{
+            background-color:rgba(0, 153, 255, 0.863);
+            padding:10px;
+            margin-bottom:20px;
+        }
+        header .item{
+            margin-left:20px;
+            text-decoration-style:none;
+            color:white;
+        }
+        .btn{
+            background-color:rgba(0, 153, 255, 0.863);
+            color:white;
+            border:none;
+            outline:none;
+            padding:5px;
+            border-radius:5px;
+            transition:.5s;
+            padding:10px;
+        }
+        .btn:hover{
+            background-color:rgba(0, 89, 255, 0.863);
+        }
+        .text{
+            outline:none;
+            padding:5px;
+            border-radius:3px;
+            border:1px solid gray;
+        }
+        table{
+            margin-right:10px;
+        }
+        td{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageAfficherElecteur.aspx" CausesValidation="False">Afficher Elcteurs Par Cir</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/AfficherPartiPage.aspx" CausesValidation="False">Afficher Parti</asp:LinkButton>
+        </header>
+        <div style="padding-left:20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
