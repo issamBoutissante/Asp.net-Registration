@@ -11,26 +11,26 @@ namespace Exercices_de_revision_WCS_2
 {
 
 
-    public partial class WebForm2
+    public partial class WebForm4
     {
 
         /// <summary>
-        /// PartiGridView control.
+        /// LinkContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView PartiGridView;
+        protected global::System.Web.UI.WebControls.Panel LinkContent;
 
         /// <summary>
-        /// NombreTotal control.
+        /// Noms control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NombreTotal;
+        protected global::System.Web.UI.WebControls.Panel Noms;
 
         /// <summary>
         /// ErrorMessage control.
@@ -40,14 +40,5 @@ namespace Exercices_de_revision_WCS_2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ErrorMessage;
-
-        /// <summary>
-        /// Generer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Generer;
     }
 }

@@ -7,6 +7,7 @@ namespace Exercices_de_revision_WCS_2
     internal class Database
     {
         internal static string conString = ConfigurationManager.ConnectionStrings["MonConnection"].ConnectionString;
+
         internal static void Execute(Action<SqlConnection> instrunctions,Action Success=null,Action<string> Error=null)
         {
             SqlConnection Connection = new SqlConnection(conString);

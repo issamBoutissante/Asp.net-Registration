@@ -71,6 +71,9 @@
     <Content Include="Web.config" />
     <Content Include="PageAfficherElecteur.aspx" />
     <Content Include="AfficherPartiPage.aspx" />
+    <Content Include="PageGestionElecteur.aspx" />
+    <Content Include="PageRecherche.aspx" />
+    <Content Include="PageExporterXML.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionPage.aspx.cs">
@@ -102,6 +105,27 @@
     </Compile>
     <Compile Include="AfficherPartiPage.aspx.designer.cs">
       <DependentUpon>AfficherPartiPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageGestionElecteur.aspx.cs">
+      <DependentUpon>PageGestionElecteur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageGestionElecteur.aspx.designer.cs">
+      <DependentUpon>PageGestionElecteur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageRecherche.aspx.cs">
+      <DependentUpon>PageRecherche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageRecherche.aspx.designer.cs">
+      <DependentUpon>PageRecherche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageExporterXML.aspx.cs">
+      <DependentUpon>PageExporterXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageExporterXML.aspx.designer.cs">
+      <DependentUpon>PageExporterXML.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

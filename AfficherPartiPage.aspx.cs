@@ -23,7 +23,6 @@ namespace Exercices_de_revision_WCS_2
                         SelectCommand = new SqlCommand("select nomParti,COUNT(C.CINCandidat) nombreCondidat from Parti P join Candidat C " +
                         "on P.idParti=C.idParti group by nomParti", Connection)
                     }.Fill(ds, "PartiTable");
-                    ds.Tables["PartiTable"].Columns.Add(new DataColumn("XML", typeof(bool)));
                     PartiGridView.DataSource = ds.Tables["PartiTable"];
                     PartiGridView.DataBind();
                     int nbrTotal = (int)new SqlCommand("select COUNT(*) from Candidat", Connection).ExecuteScalar();
@@ -34,6 +33,27 @@ namespace Exercices_de_revision_WCS_2
                     ErrorMessage.Text = Error;
                 });
             }
+        }
+
+        protected void Generer_Click(object sender, EventArgs e)
+        {
+            DataSet dataSet = new DataSet();
+            dataSet.Tables.Add(new DataTable() {
+                Columns =
+                {
+                    new DataColumn("NomParti"),
+                    new DataColumn("nombreCondidat"),
+                }
+            });
+            foreach (GridViewRow row in PartiGridView.Rows)
+            {
+                CheckBox isSelected=row.FindControl("checkbox") as CheckBox;
+                if (isSelected.Checked)
+                {
+                    dataSet.Tables[0].Rows.Add(row.Cells[1].Text, row.Cells[2].Text);
+                }
+            }
+            dataSet.Tables[0].WriteXml(@"C:\Users\ISSAM\Desktop\Web Cote Serveur\TP\Exercices de revision WCS 2\generatedXML.xml");
         }
     }
 }

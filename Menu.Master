@@ -54,6 +54,9 @@
         <header>
             <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageAfficherElecteur.aspx" CausesValidation="False">Afficher Elcteurs Par Cir</asp:LinkButton>
             <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/AfficherPartiPage.aspx" CausesValidation="False">Afficher Parti</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageGestionElecteur.aspx" CausesValidation="False">Gestion Electeur</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageRecherche.aspx" CausesValidation="False">Recherche Circonscription</asp:LinkButton>
+            <asp:LinkButton CssClass="item" runat="server" PostBackUrl="~/PageExporterXML.aspx" CausesValidation="False">Exporter XML</asp:LinkButton>
         </header>
         <div style="padding-left:20px;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

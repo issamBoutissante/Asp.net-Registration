@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <candidat>
+    <CINCandidat>E342342</CINCandidat>
+    <nomCandidat>boutissante</nomCandidat>
+    <prenomCandidat>Omar</prenomCandidat>
+    <dateNC>1850-02-20T00:00:00+01:00</dateNC>
+    <niveauScolaire>Bac+2</niveauScolaire>
+    <NumOrdreListe>2</NumOrdreListe>
+    <adrCandidat>Ayt zyad</adrCandidat>
+    <idCirconscription>1</idCirconscription>
+    <idParti>1</idParti>
+    <idTrancheAge>1</idTrancheAge>
+  </candidat>
+  <candidat>
+    <CINCandidat>EE24234</CINCandidat>
+    <nomCandidat>Sghir</nomCandidat>
+    <prenomCandidat>Hassan</prenomCandidat>
+    <dateNC>2000-02-03T00:00:00+01:00</dateNC>
+    <niveauScolaire>Bac</niveauScolaire>
+    <NumOrdreListe>1</NumOrdreListe>
+    <adrCandidat>Marrakech-Azli</adrCandidat>
+    <idCirconscription>1</idCirconscription>
+    <idParti>1</idParti>
+    <idTrancheAge>1</idTrancheAge>
+  </candidat>
+</NewDataSet>
